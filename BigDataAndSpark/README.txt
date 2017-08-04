@@ -1,0 +1,1 @@
+Be sure to check src\main\resources in each assignment.  Git will not upload files larger than 100MB, and the primary data files for these assignments are over that limit.  I've created zip files for them, but you need to unzip them before running main().
