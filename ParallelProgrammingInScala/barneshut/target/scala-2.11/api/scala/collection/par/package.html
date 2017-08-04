@@ -1,0 +1,762 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>par - scala.collection.par</title>
+          <meta name="description" content="par - scala.collection.par" />
+          <meta name="keywords" content="par scala.collection.par" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'scala.collection.par.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="scala">scala</a>.<a href="../package.html" class="extype" name="scala.collection">collection</a></p>
+        <h1>par</h1><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">par</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.collection.par.workstealing.OpsDefs">OpsDefs</span>, <span class="extype" name="scala.collection.par.workstealing.BinaryTrees.Scope">Scope</span>, <span class="extype" name="scala.collection.par.workstealing.HashTries.Scope">Scope</span>, <span class="extype" name="scala.collection.par.workstealing.HashTables.Scope">Scope</span>, <span class="extype" name="scala.collection.par.workstealing.Concs.Scope">Scope</span>, <span class="extype" name="scala.collection.par.workstealing.Ranges.Scope">Scope</span>, <span class="extype" name="scala.collection.par.workstealing.Arrays.Scope">Scope</span>, <span class="extype" name="scala.collection.par.workstealing.Zippables.Scope">Scope</span>, <span class="extype" name="scala.collection.par.workstealing.Reducables.Scope">Scope</span>, <span class="extype" name="scala.collection.par.ParDefs">ParDefs</span>, <a href="../../package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="scala.collection.par"><span>par</span></li><li class="in" name="scala.collection.par.workstealing.OpsDefs"><span>OpsDefs</span></li><li class="in" name="scala.collection.par.workstealing.BinaryTrees.Scope"><span>Scope</span></li><li class="in" name="scala.collection.par.workstealing.HashTries.Scope"><span>Scope</span></li><li class="in" name="scala.collection.par.workstealing.HashTables.Scope"><span>Scope</span></li><li class="in" name="scala.collection.par.workstealing.Concs.Scope"><span>Scope</span></li><li class="in" name="scala.collection.par.workstealing.Ranges.Scope"><span>Scope</span></li><li class="in" name="scala.collection.par.workstealing.Arrays.Scope"><span>Scope</span></li><li class="in" name="scala.collection.par.workstealing.Zippables.Scope"><span>Scope</span></li><li class="in" name="scala.collection.par.workstealing.Reducables.Scope"><span>Scope</span></li><li class="in" name="scala.collection.par.ParDefs"><span>ParDefs</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="scala.collection.par.ParDefs.assume" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="assumeextendsAnnotationwithStaticAnnotation"></a>
+      <a id="assume:assume"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">assume</span><span class="result"> extends <span class="extype" name="scala.annotation.Annotation">Annotation</span> with <span class="extype" name="scala.annotation.StaticAnnotation">StaticAnnotation</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@assumeextendsAnnotationwithStaticAnnotation" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ParDefs</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.collection.par.workstealing.Arrays.Scope#arrayIsZippable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="arrayIsZippable[T](implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.IsZippable[Array[T],T]"></a>
+      <a id="arrayIsZippable[T](Scheduler):IsZippable[Array[T],T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">arrayIsZippable</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ctx">ctx: <span class="extype" name="scala.collection.par.Scheduler">Scheduler</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.par.generic.IsZippable">IsZippable</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.collection.par.workstealing.Arrays.Scope.arrayIsZippable.T">T</span>], <span class="extype" name="scala.collection.par.workstealing.Arrays.Scope.arrayIsZippable.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@arrayIsZippable[T](implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.IsZippable[Array[T],T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.Arrays.Scope#arrayOps" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="arrayOps[T](a:scala.collection.par.Par[Array[T]]):scala.collection.par.workstealing.Arrays.Ops[T]"></a>
+      <a id="arrayOps[T](Par[Array[T]]):Ops[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">arrayOps</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="a">a: <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.collection.par.workstealing.Arrays.Scope.arrayOps.T">T</span>]]</span>)</span><span class="result">: <span class="extype" name="scala.collection.par.workstealing.Arrays.Ops">Ops</span>[<span class="extype" name="scala.collection.par.workstealing.Arrays.Scope.arrayOps.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@arrayOps[T](a:scala.collection.par.Par[Array[T]]):scala.collection.par.workstealing.Arrays.Ops[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.Arrays.Scope#canMergeArray" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canMergeArray[T](implicitevidence$1:scala.reflect.ClassTag[T],implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Par[Array[_]],T,scala.collection.par.Par[Array[T]]]"></a>
+      <a id="canMergeArray[T](ClassTag[T],Scheduler):CanMergeFrom[Par[Array[_]],T,Par[Array[T]]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canMergeArray</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="scala.collection.par.workstealing.Arrays.Scope.canMergeArray.T">T</span>]</span>, <span name="ctx">ctx: <span class="extype" name="scala.collection.par.Scheduler">Scheduler</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.par.generic.CanMergeFrom">CanMergeFrom</span>[<span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.Array">Array</span>[_]], <span class="extype" name="scala.collection.par.workstealing.Arrays.Scope.canMergeArray.T">T</span>, <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.collection.par.workstealing.Arrays.Scope.canMergeArray.T">T</span>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@canMergeArray[T](implicitevidence$1:scala.reflect.ClassTag[T],implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Par[Array[_]],T,scala.collection.par.Par[Array[T]]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.Concs.Scope#canMergeConc" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canMergeConc[T]:scala.collection.par.generic.CanMergeFrom[scala.collection.par.Conc[_],T,scala.collection.par.Par[scala.collection.par.Conc[T]]]"></a>
+      <a id="canMergeConc[T]:CanMergeFrom[Conc[_],T,Par[Conc[T]]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canMergeConc</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <span class="extype" name="scala.collection.par.generic.CanMergeFrom">CanMergeFrom</span>[<span class="extype" name="scala.collection.par.Conc">Conc</span>[_], <span class="extype" name="scala.collection.par.workstealing.Concs.Scope.canMergeConc.T">T</span>, <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.par.Conc">Conc</span>[<span class="extype" name="scala.collection.par.workstealing.Concs.Scope.canMergeConc.T">T</span>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@canMergeConc[T]:scala.collection.par.generic.CanMergeFrom[scala.collection.par.Conc[_],T,scala.collection.par.Par[scala.collection.par.Conc[T]]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.HashTables.Scope#canMergeHashMap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canMergeHashMap[K,V](implicitevidence$1:scala.reflect.ClassTag[K],implicitevidence$2:scala.reflect.ClassTag[V],implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Par[scala.collection.mutable.HashMap[_,_]],(K,V),scala.collection.par.Par[scala.collection.mutable.HashMap[K,V]]]{defapply(from:scala.collection.par.Par[scala.collection.mutable.HashMap[_,_]]):scala.collection.par.workstealing.HashTables.HashMapDiscardingMerger[K,V];defapply():scala.collection.par.workstealing.HashTables.HashMapDiscardingMerger[K,V]}"></a>
+      <a id="canMergeHashMap[K,V](ClassTag[K],ClassTag[V],Scheduler):CanMergeFrom[Par[HashMap[_,_]],(K,V),Par[HashMap[K,V]]]{.../*2definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canMergeHashMap</span><span class="tparams">[<span name="K">K</span>, <span name="V">V</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.canMergeHashMap.K">K</span>]</span>, <span name="arg1">arg1: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.canMergeHashMap.V">V</span>]</span>, <span name="ctx">ctx: <span class="extype" name="scala.collection.par.Scheduler">Scheduler</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.par.generic.CanMergeFrom">CanMergeFrom</span>[<span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.mutable.HashMap">HashMap</span>[_, _]], (<span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.canMergeHashMap.K">K</span>, <span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.canMergeHashMap.V">V</span>), <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.mutable.HashMap">HashMap</span>[<span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.canMergeHashMap.K">K</span>, <span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.canMergeHashMap.V">V</span>]]] { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@canMergeHashMap[K,V](implicitevidence$1:scala.reflect.ClassTag[K],implicitevidence$2:scala.reflect.ClassTag[V],implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Par[scala.collection.mutable.HashMap[_,_]],(K,V),scala.collection.par.Par[scala.collection.mutable.HashMap[K,V]]]{defapply(from:scala.collection.par.Par[scala.collection.mutable.HashMap[_,_]]):scala.collection.par.workstealing.HashTables.HashMapDiscardingMerger[K,V];defapply():scala.collection.par.workstealing.HashTables.HashMapDiscardingMerger[K,V]}" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.HashTables.Scope#canMergeHashSet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canMergeHashSet[T](implicitevidence$3:scala.reflect.ClassTag[T],implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Par[scala.collection.mutable.HashSet[_]],T,scala.collection.par.Par[scala.collection.mutable.HashSet[T]]]{defapply(from:scala.collection.par.Par[scala.collection.mutable.HashSet[_]]):scala.collection.par.workstealing.HashTables.HashSetMerger[T];defapply():scala.collection.par.workstealing.HashTables.HashSetMerger[T]}"></a>
+      <a id="canMergeHashSet[T](ClassTag[T],Scheduler):CanMergeFrom[Par[HashSet[_]],T,Par[HashSet[T]]]{.../*2definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canMergeHashSet</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.canMergeHashSet.T">T</span>]</span>, <span name="ctx">ctx: <span class="extype" name="scala.collection.par.Scheduler">Scheduler</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.par.generic.CanMergeFrom">CanMergeFrom</span>[<span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.mutable.HashSet">HashSet</span>[_]], <span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.canMergeHashSet.T">T</span>, <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.mutable.HashSet">HashSet</span>[<span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.canMergeHashSet.T">T</span>]]] { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@canMergeHashSet[T](implicitevidence$3:scala.reflect.ClassTag[T],implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Par[scala.collection.mutable.HashSet[_]],T,scala.collection.par.Par[scala.collection.mutable.HashSet[T]]]{defapply(from:scala.collection.par.Par[scala.collection.mutable.HashSet[_]]):scala.collection.par.workstealing.HashTables.HashSetMerger[T];defapply():scala.collection.par.workstealing.HashTables.HashSetMerger[T]}" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.HashTries.Scope#canMergeHashTrieMap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canMergeHashTrieMap[K,V](implicitevidence$2:scala.reflect.ClassTag[K],implicitevidence$3:scala.reflect.ClassTag[V],implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Par[scala.collection.immutable.HashMap[_,_]],(K,V),scala.collection.par.Par[scala.collection.immutable.HashMap[K,V]]]{defapply(from:scala.collection.par.Par[scala.collection.immutable.HashMap[_,_]]):scala.collection.par.workstealing.HashTries.HashMapMerger[K,V];defapply():scala.collection.par.workstealing.HashTries.HashMapMerger[K,V]}"></a>
+      <a id="canMergeHashTrieMap[K,V](ClassTag[K],ClassTag[V],Scheduler):CanMergeFrom[Par[HashMap[_,_]],(K,V),Par[HashMap[K,V]]]{.../*2definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canMergeHashTrieMap</span><span class="tparams">[<span name="K">K</span>, <span name="V">V</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.canMergeHashTrieMap.K">K</span>]</span>, <span name="arg1">arg1: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.canMergeHashTrieMap.V">V</span>]</span>, <span name="ctx">ctx: <span class="extype" name="scala.collection.par.Scheduler">Scheduler</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.par.generic.CanMergeFrom">CanMergeFrom</span>[<span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.immutable.HashMap">HashMap</span>[_, _]], (<span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.canMergeHashTrieMap.K">K</span>, <span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.canMergeHashTrieMap.V">V</span>), <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.immutable.HashMap">HashMap</span>[<span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.canMergeHashTrieMap.K">K</span>, <span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.canMergeHashTrieMap.V">V</span>]]] { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@canMergeHashTrieMap[K,V](implicitevidence$2:scala.reflect.ClassTag[K],implicitevidence$3:scala.reflect.ClassTag[V],implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Par[scala.collection.immutable.HashMap[_,_]],(K,V),scala.collection.par.Par[scala.collection.immutable.HashMap[K,V]]]{defapply(from:scala.collection.par.Par[scala.collection.immutable.HashMap[_,_]]):scala.collection.par.workstealing.HashTries.HashMapMerger[K,V];defapply():scala.collection.par.workstealing.HashTries.HashMapMerger[K,V]}" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.HashTries.Scope#canMergeHashTrieSet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canMergeHashTrieSet[T](implicitevidence$1:scala.reflect.ClassTag[T],implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Par[scala.collection.immutable.HashSet[_]],T,scala.collection.par.Par[scala.collection.immutable.HashSet[T]]]{defapply(from:scala.collection.par.Par[scala.collection.immutable.HashSet[_]]):scala.collection.par.workstealing.HashTries.HashSetMerger[T];defapply():scala.collection.par.workstealing.HashTries.HashSetMerger[T]}"></a>
+      <a id="canMergeHashTrieSet[T](ClassTag[T],Scheduler):CanMergeFrom[Par[HashSet[_]],T,Par[HashSet[T]]]{.../*2definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canMergeHashTrieSet</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.canMergeHashTrieSet.T">T</span>]</span>, <span name="ctx">ctx: <span class="extype" name="scala.collection.par.Scheduler">Scheduler</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.par.generic.CanMergeFrom">CanMergeFrom</span>[<span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.immutable.HashSet">HashSet</span>[_]], <span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.canMergeHashTrieSet.T">T</span>, <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.immutable.HashSet">HashSet</span>[<span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.canMergeHashTrieSet.T">T</span>]]] { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@canMergeHashTrieSet[T](implicitevidence$1:scala.reflect.ClassTag[T],implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Par[scala.collection.immutable.HashSet[_]],T,scala.collection.par.Par[scala.collection.immutable.HashSet[T]]]{defapply(from:scala.collection.par.Par[scala.collection.immutable.HashSet[_]]):scala.collection.par.workstealing.HashTries.HashSetMerger[T];defapply():scala.collection.par.workstealing.HashTries.HashSetMerger[T]}" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.HashTables.Scope#canMergeIntHashSet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canMergeIntHashSet(implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Par[scala.collection.mutable.HashSet[_]],Int,scala.collection.par.Par[scala.collection.mutable.HashSet[Int]]]{defapply(from:scala.collection.par.Par[scala.collection.mutable.HashSet[_]]):scala.collection.par.workstealing.HashTables.HashSetMerger[Int];defapply():scala.collection.par.workstealing.HashTables.HashSetMerger[Int]}"></a>
+      <a id="canMergeIntHashSet(Scheduler):CanMergeFrom[Par[HashSet[_]],Int,Par[HashSet[Int]]]{.../*2definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canMergeIntHashSet</span><span class="params">(<span class="implicit">implicit </span><span name="ctx">ctx: <span class="extype" name="scala.collection.par.Scheduler">Scheduler</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.par.generic.CanMergeFrom">CanMergeFrom</span>[<span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.mutable.HashSet">HashSet</span>[_]], <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.mutable.HashSet">HashSet</span>[<span class="extype" name="scala.Int">Int</span>]]] { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@canMergeIntHashSet(implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Par[scala.collection.mutable.HashSet[_]],Int,scala.collection.par.Par[scala.collection.mutable.HashSet[Int]]]{defapply(from:scala.collection.par.Par[scala.collection.mutable.HashSet[_]]):scala.collection.par.workstealing.HashTables.HashSetMerger[Int];defapply():scala.collection.par.workstealing.HashTables.HashSetMerger[Int]}" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.Ranges.Scope#canMergeParRange" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canMergeParRange[T&lt;:Range](implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Par[T],Int,scala.collection.par.Par[Array[Int]]]"></a>
+      <a id="canMergeParRange[T&lt;:Range](Scheduler):CanMergeFrom[Par[T],Int,Par[Array[Int]]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canMergeParRange</span><span class="tparams">[<span name="T">T &lt;: <a href="../../package.html#Range=scala.collection.immutable.Range" class="extmbr" name="scala.Range">Range</a></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ctx">ctx: <span class="extype" name="scala.collection.par.Scheduler">Scheduler</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.par.generic.CanMergeFrom">CanMergeFrom</span>[<span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.par.workstealing.Ranges.Scope.canMergeParRange.T">T</span>], <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@canMergeParRange[T&lt;:Range](implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Par[T],Int,scala.collection.par.Par[Array[Int]]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.Ranges.Scope#canMergeRange" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canMergeRange(implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[Range,Int,scala.collection.par.Par[Array[Int]]]"></a>
+      <a id="canMergeRange(Scheduler):CanMergeFrom[Range,Int,Par[Array[Int]]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canMergeRange</span><span class="params">(<span class="implicit">implicit </span><span name="ctx">ctx: <span class="extype" name="scala.collection.par.Scheduler">Scheduler</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.par.generic.CanMergeFrom">CanMergeFrom</span>[<a href="../../package.html#Range=scala.collection.immutable.Range" class="extmbr" name="scala.Range">Range</a>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@canMergeRange(implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[Range,Int,scala.collection.par.Par[Array[Int]]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.Reducables.Scope#canMergeReducable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canMergeReducable[T](implicitevidence$1:scala.reflect.ClassTag[T],implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Reducable[_],T,scala.collection.par.Par[Array[T]]]"></a>
+      <a id="canMergeReducable[T](ClassTag[T],Scheduler):CanMergeFrom[Reducable[_],T,Par[Array[T]]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canMergeReducable</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="scala.collection.par.workstealing.Reducables.Scope.canMergeReducable.T">T</span>]</span>, <span name="ctx">ctx: <span class="extype" name="scala.collection.par.Scheduler">Scheduler</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.par.generic.CanMergeFrom">CanMergeFrom</span>[<span class="extype" name="scala.collection.par.Reducable">Reducable</span>[_], <span class="extype" name="scala.collection.par.workstealing.Reducables.Scope.canMergeReducable.T">T</span>, <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.collection.par.workstealing.Reducables.Scope.canMergeReducable.T">T</span>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@canMergeReducable[T](implicitevidence$1:scala.reflect.ClassTag[T],implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Reducable[_],T,scala.collection.par.Par[Array[T]]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.Reducables.Scope#canMergeReducableInt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canMergeReducableInt(implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Reducable[_],Int,scala.collection.par.Par[Array[Int]]]"></a>
+      <a id="canMergeReducableInt(Scheduler):CanMergeFrom[Reducable[_],Int,Par[Array[Int]]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canMergeReducableInt</span><span class="params">(<span class="implicit">implicit </span><span name="ctx">ctx: <span class="extype" name="scala.collection.par.Scheduler">Scheduler</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.par.generic.CanMergeFrom">CanMergeFrom</span>[<span class="extype" name="scala.collection.par.Reducable">Reducable</span>[_], <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@canMergeReducableInt(implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.CanMergeFrom[scala.collection.par.Reducable[_],Int,scala.collection.par.Par[Array[Int]]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.Zippables.Scope#canMergeZippable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canMergeZippable[T]:scala.collection.par.generic.CanMergeFrom[scala.collection.par.Zippable[_],Int,scala.collection.par.Zippable[T]]"></a>
+      <a id="canMergeZippable[T]:CanMergeFrom[Zippable[_],Int,Zippable[T]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canMergeZippable</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <span class="extype" name="scala.collection.par.generic.CanMergeFrom">CanMergeFrom</span>[<span class="extype" name="scala.collection.par.Zippable">Zippable</span>[_], <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.collection.par.Zippable">Zippable</span>[<span class="extype" name="scala.collection.par.workstealing.Zippables.Scope.canMergeZippable.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@canMergeZippable[T]:scala.collection.par.generic.CanMergeFrom[scala.collection.par.Zippable[_],Int,scala.collection.par.Zippable[T]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.Concs.Scope#concIsZippable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="concIsZippable[T]:scala.collection.par.generic.IsZippable[scala.collection.par.Conc[T],T]{defapply(pr:scala.collection.par.Par[scala.collection.par.Conc[T]]):Nothing}"></a>
+      <a id="concIsZippable[T]:IsZippable[Conc[T],T]{defapply(pr:scala.collection.par.Par[scala.collection.par.Conc[T]]):Nothing}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">concIsZippable</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <span class="extype" name="scala.collection.par.generic.IsZippable">IsZippable</span>[<span class="extype" name="scala.collection.par.Conc">Conc</span>[<span class="extype" name="scala.collection.par.workstealing.Concs.Scope.concIsZippable.T">T</span>], <span class="extype" name="scala.collection.par.workstealing.Concs.Scope.concIsZippable.T">T</span>] { def apply(pr: scala.collection.par.Par[scala.collection.par.Conc[T]]): Nothing }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@concIsZippable[T]:scala.collection.par.generic.IsZippable[scala.collection.par.Conc[T],T]{defapply(pr:scala.collection.par.Par[scala.collection.par.Conc[T]]):Nothing}" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.Concs.Scope#concOps" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="concOps[T](c:scala.collection.par.Par[scala.collection.par.Conc[T]]):scala.collection.par.workstealing.Concs.Ops[T]"></a>
+      <a id="concOps[T](Par[Conc[T]]):Ops[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">concOps</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="c">c: <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.par.Conc">Conc</span>[<span class="extype" name="scala.collection.par.workstealing.Concs.Scope.concOps.T">T</span>]]</span>)</span><span class="result">: <span class="extype" name="scala.collection.par.workstealing.Concs.Ops">Ops</span>[<span class="extype" name="scala.collection.par.workstealing.Concs.Scope.concOps.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@concOps[T](c:scala.collection.par.Par[scala.collection.par.Conc[T]]):scala.collection.par.workstealing.Concs.Ops[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par#getUnsafe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getUnsafe():sun.misc.Unsafe"></a>
+      <a id="getUnsafe():Unsafe"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getUnsafe</span><span class="params">()</span><span class="result">: <span class="extype" name="sun.misc.Unsafe">Unsafe</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@getUnsafe():sun.misc.Unsafe" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.collection.par.workstealing.HashTables.Scope#hashMapIsReducable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashMapIsReducable[K,V]:scala.collection.par.generic.IsReducable[scala.collection.mutable.HashMap[K,V],(K,V)]"></a>
+      <a id="hashMapIsReducable[K,V]:IsReducable[HashMap[K,V],(K,V)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashMapIsReducable</span><span class="tparams">[<span name="K">K</span>, <span name="V">V</span>]</span><span class="result">: <span class="extype" name="scala.collection.par.generic.IsReducable">IsReducable</span>[<span class="extype" name="scala.collection.mutable.HashMap">HashMap</span>[<span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.hashMapIsReducable.K">K</span>, <span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.hashMapIsReducable.V">V</span>], (<span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.hashMapIsReducable.K">K</span>, <span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.hashMapIsReducable.V">V</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@hashMapIsReducable[K,V]:scala.collection.par.generic.IsReducable[scala.collection.mutable.HashMap[K,V],(K,V)]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.HashTables.Scope#hashMapOps" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashMapOps[K,V](a:scala.collection.par.Par[scala.collection.mutable.HashMap[K,V]]):scala.collection.par.workstealing.HashTables.HashMapOps[K,V]"></a>
+      <a id="hashMapOps[K,V](Par[HashMap[K,V]]):HashMapOps[K,V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashMapOps</span><span class="tparams">[<span name="K">K</span>, <span name="V">V</span>]</span><span class="params">(<span name="a">a: <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.mutable.HashMap">HashMap</span>[<span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.hashMapOps.K">K</span>, <span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.hashMapOps.V">V</span>]]</span>)</span><span class="result">: <span class="extype" name="scala.collection.par.workstealing.HashTables.HashMapOps">HashMapOps</span>[<span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.hashMapOps.K">K</span>, <span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.hashMapOps.V">V</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@hashMapOps[K,V](a:scala.collection.par.Par[scala.collection.mutable.HashMap[K,V]]):scala.collection.par.workstealing.HashTables.HashMapOps[K,V]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.HashTables.Scope#hashSetIsReducable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashSetIsReducable[T]:scala.collection.par.generic.IsReducable[scala.collection.mutable.HashSet[T],T]"></a>
+      <a id="hashSetIsReducable[T]:IsReducable[HashSet[T],T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashSetIsReducable</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <span class="extype" name="scala.collection.par.generic.IsReducable">IsReducable</span>[<span class="extype" name="scala.collection.mutable.HashSet">HashSet</span>[<span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.hashSetIsReducable.T">T</span>], <span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.hashSetIsReducable.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@hashSetIsReducable[T]:scala.collection.par.generic.IsReducable[scala.collection.mutable.HashSet[T],T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.HashTables.Scope#hashSetOps" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashSetOps[T](a:scala.collection.par.Par[scala.collection.mutable.HashSet[T]]):scala.collection.par.workstealing.HashTables.HashSetOps[T]"></a>
+      <a id="hashSetOps[T](Par[HashSet[T]]):HashSetOps[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashSetOps</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="a">a: <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.mutable.HashSet">HashSet</span>[<span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.hashSetOps.T">T</span>]]</span>)</span><span class="result">: <span class="extype" name="scala.collection.par.workstealing.HashTables.HashSetOps">HashSetOps</span>[<span class="extype" name="scala.collection.par.workstealing.HashTables.Scope.hashSetOps.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@hashSetOps[T](a:scala.collection.par.Par[scala.collection.mutable.HashSet[T]]):scala.collection.par.workstealing.HashTables.HashSetOps[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.HashTries.Scope#hashTrieMapIsReducable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashTrieMapIsReducable[K,V]:scala.collection.par.generic.IsReducable[scala.collection.immutable.HashMap[K,V],(K,V)]"></a>
+      <a id="hashTrieMapIsReducable[K,V]:IsReducable[HashMap[K,V],(K,V)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashTrieMapIsReducable</span><span class="tparams">[<span name="K">K</span>, <span name="V">V</span>]</span><span class="result">: <span class="extype" name="scala.collection.par.generic.IsReducable">IsReducable</span>[<span class="extype" name="scala.collection.immutable.HashMap">HashMap</span>[<span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.hashTrieMapIsReducable.K">K</span>, <span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.hashTrieMapIsReducable.V">V</span>], (<span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.hashTrieMapIsReducable.K">K</span>, <span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.hashTrieMapIsReducable.V">V</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@hashTrieMapIsReducable[K,V]:scala.collection.par.generic.IsReducable[scala.collection.immutable.HashMap[K,V],(K,V)]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.HashTries.Scope#hashTrieMapOps" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashTrieMapOps[K,V](a:scala.collection.par.Par[scala.collection.immutable.HashMap[K,V]]):scala.collection.par.workstealing.HashTries.HashMapOps[K,V]"></a>
+      <a id="hashTrieMapOps[K,V](Par[HashMap[K,V]]):HashMapOps[K,V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashTrieMapOps</span><span class="tparams">[<span name="K">K</span>, <span name="V">V</span>]</span><span class="params">(<span name="a">a: <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.immutable.HashMap">HashMap</span>[<span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.hashTrieMapOps.K">K</span>, <span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.hashTrieMapOps.V">V</span>]]</span>)</span><span class="result">: <span class="extype" name="scala.collection.par.workstealing.HashTries.HashMapOps">HashMapOps</span>[<span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.hashTrieMapOps.K">K</span>, <span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.hashTrieMapOps.V">V</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@hashTrieMapOps[K,V](a:scala.collection.par.Par[scala.collection.immutable.HashMap[K,V]]):scala.collection.par.workstealing.HashTries.HashMapOps[K,V]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.HashTries.Scope#hashTrieSetIsReducable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashTrieSetIsReducable[T]:scala.collection.par.generic.IsReducable[scala.collection.immutable.HashSet[T],T]"></a>
+      <a id="hashTrieSetIsReducable[T]:IsReducable[HashSet[T],T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashTrieSetIsReducable</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <span class="extype" name="scala.collection.par.generic.IsReducable">IsReducable</span>[<span class="extype" name="scala.collection.immutable.HashSet">HashSet</span>[<span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.hashTrieSetIsReducable.T">T</span>], <span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.hashTrieSetIsReducable.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@hashTrieSetIsReducable[T]:scala.collection.par.generic.IsReducable[scala.collection.immutable.HashSet[T],T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.HashTries.Scope#hashTrieSetOps" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashTrieSetOps[T](a:scala.collection.par.Par[scala.collection.immutable.HashSet[T]]):scala.collection.par.workstealing.HashTries.HashSetOps[T]"></a>
+      <a id="hashTrieSetOps[T](Par[HashSet[T]]):HashSetOps[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashTrieSetOps</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="a">a: <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.immutable.HashSet">HashSet</span>[<span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.hashTrieSetOps.T">T</span>]]</span>)</span><span class="result">: <span class="extype" name="scala.collection.par.workstealing.HashTries.HashSetOps">HashSetOps</span>[<span class="extype" name="scala.collection.par.workstealing.HashTries.Scope.hashTrieSetOps.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@hashTrieSetOps[T](a:scala.collection.par.Par[scala.collection.immutable.HashSet[T]]):scala.collection.par.workstealing.HashTries.HashSetOps[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.BinaryTrees.Scope#immutableTreeSetIsReducable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="immutableTreeSetIsReducable[T]:scala.collection.par.generic.IsReducable[scala.collection.immutable.TreeSet[T],T]"></a>
+      <a id="immutableTreeSetIsReducable[T]:IsReducable[TreeSet[T],T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">immutableTreeSetIsReducable</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <span class="extype" name="scala.collection.par.generic.IsReducable">IsReducable</span>[<span class="extype" name="scala.collection.immutable.TreeSet">TreeSet</span>[<span class="extype" name="scala.collection.par.workstealing.BinaryTrees.Scope.immutableTreeSetIsReducable.T">T</span>], <span class="extype" name="scala.collection.par.workstealing.BinaryTrees.Scope.immutableTreeSetIsReducable.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@immutableTreeSetIsReducable[T]:scala.collection.par.generic.IsReducable[scala.collection.immutable.TreeSet[T],T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.ParDefs#par2reducable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="par2reducable[T,Repr](r:scala.collection.par.Par[Repr])(implicitisReducable:scala.collection.par.generic.IsReducable[Repr,T]):scala.collection.par.Reducable[T]"></a>
+      <a id="par2reducable[T,Repr](Par[Repr])(IsReducable[Repr,T]):Reducable[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">par2reducable</span><span class="tparams">[<span name="T">T</span>, <span name="Repr">Repr</span>]</span><span class="params">(<span name="r">r: <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.par.ParDefs.par2reducable.Repr">Repr</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="isReducable">isReducable: <span class="extype" name="scala.collection.par.generic.IsReducable">IsReducable</span>[<span class="extype" name="scala.collection.par.ParDefs.par2reducable.Repr">Repr</span>, <span class="extype" name="scala.collection.par.ParDefs.par2reducable.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.par.Reducable">Reducable</span>[<span class="extype" name="scala.collection.par.ParDefs.par2reducable.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@par2reducable[T,Repr](r:scala.collection.par.Par[Repr])(implicitisReducable:scala.collection.par.generic.IsReducable[Repr,T]):scala.collection.par.Reducable[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ParDefs</dd></dl></div>
+    </li><li name="scala.collection.par.ParDefs#par2zippable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="par2zippable[T,Repr](r:scala.collection.par.Par[Repr])(implicitisZippable:scala.collection.par.generic.IsZippable[Repr,T]):scala.collection.par.Zippable[T]"></a>
+      <a id="par2zippable[T,Repr](Par[Repr])(IsZippable[Repr,T]):Zippable[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">par2zippable</span><span class="tparams">[<span name="T">T</span>, <span name="Repr">Repr</span>]</span><span class="params">(<span name="r">r: <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.par.ParDefs.par2zippable.Repr">Repr</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="isZippable">isZippable: <span class="extype" name="scala.collection.par.generic.IsZippable">IsZippable</span>[<span class="extype" name="scala.collection.par.ParDefs.par2zippable.Repr">Repr</span>, <span class="extype" name="scala.collection.par.ParDefs.par2zippable.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.par.Zippable">Zippable</span>[<span class="extype" name="scala.collection.par.ParDefs.par2zippable.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@par2zippable[T,Repr](r:scala.collection.par.Par[Repr])(implicitisZippable:scala.collection.par.generic.IsZippable[Repr,T]):scala.collection.par.Zippable[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ParDefs</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.Ranges.Scope#rangeIsZippable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="rangeIsZippable[T&lt;:Range](implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.IsZippable[T,Int]{defapply(pr:scala.collection.par.Par[T]):scala.collection.par.Zippable[Int]{defstealer:scala.collection.par.workstealing.Ranges.RangeStealer}}"></a>
+      <a id="rangeIsZippable[T&lt;:Range](Scheduler):IsZippable[T,Int]{defapply(pr:scala.collection.par.Par[T]):scala.collection.par.Zippable[Int]{defstealer:scala.collection.par.workstealing.Ranges.RangeStealer}}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rangeIsZippable</span><span class="tparams">[<span name="T">T &lt;: <a href="../../package.html#Range=scala.collection.immutable.Range" class="extmbr" name="scala.Range">Range</a></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ctx">ctx: <span class="extype" name="scala.collection.par.Scheduler">Scheduler</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.par.generic.IsZippable">IsZippable</span>[<span class="extype" name="scala.collection.par.workstealing.Ranges.Scope.rangeIsZippable.T">T</span>, <span class="extype" name="scala.Int">Int</span>] { def apply(pr: scala.collection.par.Par[T]): scala.collection.par.Zippable[Int]{def stealer: scala.collection.par.workstealing.Ranges.RangeStealer} }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@rangeIsZippable[T&lt;:Range](implicitctx:scala.collection.par.Scheduler):scala.collection.par.generic.IsZippable[T,Int]{defapply(pr:scala.collection.par.Par[T]):scala.collection.par.Zippable[Int]{defstealer:scala.collection.par.workstealing.Ranges.RangeStealer}}" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.Ranges.Scope#rangeOps" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="rangeOps[T&lt;:Range](r:scala.collection.par.Par[T]):scala.collection.par.workstealing.Ranges.Ops"></a>
+      <a id="rangeOps[T&lt;:Range](Par[T]):Ops"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rangeOps</span><span class="tparams">[<span name="T">T &lt;: <a href="../../package.html#Range=scala.collection.immutable.Range" class="extmbr" name="scala.Range">Range</a></span>]</span><span class="params">(<span name="r">r: <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.par.workstealing.Ranges.Scope.rangeOps.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.par.workstealing.Ranges.Ops">Ops</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@rangeOps[T&lt;:Range](r:scala.collection.par.Par[T]):scala.collection.par.workstealing.Ranges.Ops" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.Reducables.Scope#reducableOps" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reducableOps[T](r:scala.collection.par.Reducable[T]):collection.par.workstealing.Reducables.Ops[T]"></a>
+      <a id="reducableOps[T](Reducable[T]):Ops[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reducableOps</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="r">r: <span class="extype" name="scala.collection.par.Reducable">Reducable</span>[<span class="extype" name="scala.collection.par.workstealing.Reducables.Scope.reducableOps.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.par.workstealing.Reducables.Ops">Ops</span>[<span class="extype" name="scala.collection.par.workstealing.Reducables.Scope.reducableOps.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@reducableOps[T](r:scala.collection.par.Reducable[T]):collection.par.workstealing.Reducables.Ops[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par.ParDefs#seq2ops" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="seq2ops[Repr](seq:Repr):scala.collection.par.ParDefs.ops[Repr]"></a>
+      <a id="seq2ops[Repr](Repr):ops[Repr]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">seq2ops</span><span class="tparams">[<span name="Repr">Repr</span>]</span><span class="params">(<span name="seq">seq: <span class="extype" name="scala.collection.par.ParDefs.seq2ops.Repr">Repr</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.par.ParDefs.ops">ops</span>[<span class="extype" name="scala.collection.par.ParDefs.seq2ops.Repr">Repr</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@seq2ops[Repr](seq:Repr):scala.collection.par.ParDefs.ops[Repr]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ParDefs</dd></dl></div>
+    </li><li name="scala.collection.par.workstealing.BinaryTrees.Scope#treeSetOps" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="treeSetOps[T](ts:scala.collection.par.Par[scala.collection.immutable.TreeSet[T]]):scala.collection.par.workstealing.BinaryTrees.TreeSetOps[T]"></a>
+      <a id="treeSetOps[T](Par[TreeSet[T]]):TreeSetOps[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">treeSetOps</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="ts">ts: <span class="extype" name="scala.collection.par.Par">Par</span>[<span class="extype" name="scala.collection.immutable.TreeSet">TreeSet</span>[<span class="extype" name="scala.collection.par.workstealing.BinaryTrees.Scope.treeSetOps.T">T</span>]]</span>)</span><span class="result">: <span class="extype" name="scala.collection.par.workstealing.BinaryTrees.TreeSetOps">TreeSetOps</span>[<span class="extype" name="scala.collection.par.workstealing.BinaryTrees.Scope.treeSetOps.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@treeSetOps[T](ts:scala.collection.par.Par[scala.collection.immutable.TreeSet[T]]):scala.collection.par.workstealing.BinaryTrees.TreeSetOps[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li><li name="scala.collection.par#unsafe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="unsafe:sun.misc.Unsafe"></a>
+      <a id="unsafe:Unsafe"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unsafe</span><span class="result">: <span class="extype" name="sun.misc.Unsafe">Unsafe</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@unsafe:sun.misc.Unsafe" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.collection.par.workstealing.Zippables.Scope#zippableOps" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="zippableOps[T](z:scala.collection.par.Zippable[T]):collection.par.workstealing.Zippables.Ops[T]"></a>
+      <a id="zippableOps[T](Zippable[T]):Ops[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">zippableOps</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="z">z: <span class="extype" name="scala.collection.par.Zippable">Zippable</span>[<span class="extype" name="scala.collection.par.workstealing.Zippables.Scope.zippableOps.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.par.workstealing.Zippables.Ops">Ops</span>[<span class="extype" name="scala.collection.par.workstealing.Zippables.Scope.zippableOps.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scala.collection.par.package@zippableOps[T](z:scala.collection.par.Zippable[T]):collection.par.workstealing.Zippables.Ops[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Scope</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.collection.par.workstealing.OpsDefs">
+              <h3>Inherited from <span class="extype" name="scala.collection.par.workstealing.OpsDefs">OpsDefs</span></h3>
+            </div><div class="parent" name="scala.collection.par.workstealing.BinaryTrees.Scope">
+              <h3>Inherited from <span class="extype" name="scala.collection.par.workstealing.BinaryTrees.Scope">Scope</span></h3>
+            </div><div class="parent" name="scala.collection.par.workstealing.HashTries.Scope">
+              <h3>Inherited from <span class="extype" name="scala.collection.par.workstealing.HashTries.Scope">Scope</span></h3>
+            </div><div class="parent" name="scala.collection.par.workstealing.HashTables.Scope">
+              <h3>Inherited from <span class="extype" name="scala.collection.par.workstealing.HashTables.Scope">Scope</span></h3>
+            </div><div class="parent" name="scala.collection.par.workstealing.Concs.Scope">
+              <h3>Inherited from <span class="extype" name="scala.collection.par.workstealing.Concs.Scope">Scope</span></h3>
+            </div><div class="parent" name="scala.collection.par.workstealing.Ranges.Scope">
+              <h3>Inherited from <span class="extype" name="scala.collection.par.workstealing.Ranges.Scope">Scope</span></h3>
+            </div><div class="parent" name="scala.collection.par.workstealing.Arrays.Scope">
+              <h3>Inherited from <span class="extype" name="scala.collection.par.workstealing.Arrays.Scope">Scope</span></h3>
+            </div><div class="parent" name="scala.collection.par.workstealing.Zippables.Scope">
+              <h3>Inherited from <span class="extype" name="scala.collection.par.workstealing.Zippables.Scope">Scope</span></h3>
+            </div><div class="parent" name="scala.collection.par.workstealing.Reducables.Scope">
+              <h3>Inherited from <span class="extype" name="scala.collection.par.workstealing.Reducables.Scope">Scope</span></h3>
+            </div><div class="parent" name="scala.collection.par.ParDefs">
+              <h3>Inherited from <span class="extype" name="scala.collection.par.ParDefs">ParDefs</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

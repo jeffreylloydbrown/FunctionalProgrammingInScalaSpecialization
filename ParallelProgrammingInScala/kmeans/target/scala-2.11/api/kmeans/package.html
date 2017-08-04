@@ -1,0 +1,182 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>kmeans - kmeans</title>
+          <meta name="description" content="kmeans - kmeans" />
+          <meta name="keywords" content="kmeans kmeans" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../index.html';
+            var hash = 'kmeans.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../lib/package_big.png" />
+        
+        <h1>kmeans</h1><span class="permalink">
+      <a href="../index.html#kmeans.package" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">kmeans</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="kmeans.KMeans" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="KMeansextendsAnyRef"></a>
+      <a id="KMeans:KMeans"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="KMeans.html"><span class="name">KMeans</span></a><span class="result"> extends <a href="../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#kmeans.package@KMeansextendsAnyRef" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The K-Means algorithm for cluster detection identifies <code>k</code> clusters around which <code>n</code> points cluster.</p><div class="fullcomment"><div class="comment cmt"><p>The K-Means algorithm for cluster detection identifies <code>k</code> clusters around which <code>n</code> points cluster.
+Given a set of 3D Points <code>points</code>, the algorithm is:</p><p>1. Pick <code>k</code> points called <code>means</code>.  This is called initialization.
+2. Associate each value in <code>points</code> with the mean that is closest to it.  We obtain <code>k</code> clusters of
+   points, and we refer to this process as classifying the points.
+3. Update each mean to have the average value of the corresponding cluster.
+4. If the <code>k</code> means have changed significantly (that is, if the change is larger than some threshold <code>eta</code>),
+   go back to step 2.  If they did not, we say that the algorithm converged.
+5. The <code>k</code> means represent different clusters---every point is in the cluster corresponding to the closest mean.</p><p>Making great use of this algorithm requires picking the initial <code>means</code> &quot;smartly&quot; and selecting an appropriate
+value of <code>eta</code>.  Both &quot;smartly&quot; and &quot;appropriate&quot; are vague on purpose....
+</p></div></div>
+    </li><li name="kmeans.Point" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PointextendsAnyRef"></a>
+      <a id="Point:Point"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Point.html"><span class="name">Point</span></a><span class="result"> extends <a href="../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#kmeans.package@PointextendsAnyRef" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Describes one point in three-dimensional space.</p><div class="fullcomment"><div class="comment cmt"><p>Describes one point in three-dimensional space.</p><p> Note: deliberately uses reference equality.
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="kmeans.KMeansRunner" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="KMeansRunner"></a>
+      <a id="KMeansRunner:KMeansRunner"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="KMeansRunner$.html"><span class="name">KMeansRunner</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#kmeans.package@KMeansRunner" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kmeans.fun" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fun"></a>
+      <a id="fun:fun"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="fun/package.html"><span class="name">fun</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#kmeans.package@fun" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

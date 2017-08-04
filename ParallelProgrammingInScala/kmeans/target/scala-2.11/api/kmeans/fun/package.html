@@ -1,0 +1,453 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>fun - kmeans.fun</title>
+          <meta name="description" content="fun - kmeans.fun" />
+          <meta name="keywords" content="fun kmeans.fun" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'kmeans.fun.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="kmeans">kmeans</a></p>
+        <h1>fun</h1><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fun</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="kmeans.fun"><span>fun</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="kmeans.fun.ConvergedAfterMeansAreStill" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConvergedAfterMeansAreStillextendsConvergenceStrategywithProductwithSerializable"></a>
+      <a id="ConvergedAfterMeansAreStill:ConvergedAfterMeansAreStill"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ConvergedAfterMeansAreStill.html"><span class="name">ConvergedAfterMeansAreStill</span></a><span class="params">(<span name="eta">eta: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <a href="ConvergenceStrategy.html" class="extype" name="kmeans.fun.ConvergenceStrategy">ConvergenceStrategy</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@ConvergedAfterMeansAreStillextendsConvergenceStrategywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kmeans.fun.ConvergedAfterNSteps" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConvergedAfterNStepsextendsConvergenceStrategywithProductwithSerializable"></a>
+      <a id="ConvergedAfterNSteps:ConvergedAfterNSteps"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ConvergedAfterNSteps.html"><span class="name">ConvergedAfterNSteps</span></a><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="ConvergenceStrategy.html" class="extype" name="kmeans.fun.ConvergenceStrategy">ConvergenceStrategy</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@ConvergedAfterNStepsextendsConvergenceStrategywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kmeans.fun.ConvergedWhenSNRAbove" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConvergedWhenSNRAboveextendsConvergenceStrategywithProductwithSerializable"></a>
+      <a id="ConvergedWhenSNRAbove:ConvergedWhenSNRAbove"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ConvergedWhenSNRAbove.html"><span class="name">ConvergedWhenSNRAbove</span></a><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <a href="ConvergenceStrategy.html" class="extype" name="kmeans.fun.ConvergenceStrategy">ConvergenceStrategy</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@ConvergedWhenSNRAboveextendsConvergenceStrategywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kmeans.fun.ConvergenceStrategy" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ConvergenceStrategyextendsAnyRef"></a>
+      <a id="ConvergenceStrategy:ConvergenceStrategy"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ConvergenceStrategy.html"><span class="name">ConvergenceStrategy</span></a><span class="result"> extends <a href="../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@ConvergenceStrategyextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kmeans.fun.Img" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ImgextendsAnyRef"></a>
+      <a id="Img:Img"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$Img.html"><span class="name">Img</span></a><span class="result"> extends <a href="../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@ImgextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Image is a two-dimensional matrix of pixel values.</p>
+    </li><li name="kmeans.fun.IndexedColorFilter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IndexedColorFilterextendsKMeans"></a>
+      <a id="IndexedColorFilter:IndexedColorFilter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="IndexedColorFilter.html"><span class="name">IndexedColorFilter</span></a><span class="result"> extends <a href="../KMeans.html" class="extype" name="kmeans.KMeans">KMeans</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@IndexedColorFilterextendsKMeans" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kmeans.fun.InitialSelectionStrategy" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InitialSelectionStrategyextendsAnyRef"></a>
+      <a id="InitialSelectionStrategy:InitialSelectionStrategy"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="InitialSelectionStrategy.html"><span class="name">InitialSelectionStrategy</span></a><span class="result"> extends <a href="../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@InitialSelectionStrategyextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kmeans.fun.PhotoCanvas" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PhotoCanvasextendsJComponent"></a>
+      <a id="PhotoCanvas:PhotoCanvas"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PhotoCanvas.html"><span class="name">PhotoCanvas</span></a><span class="result"> extends <span class="extype" name="javax.swing.JComponent">JComponent</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@PhotoCanvasextendsJComponent" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kmeans.fun.RGBA" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RGBA=Int"></a>
+      <a id="RGBA:RGBA"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RGBA</span><span class="result"> = <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@RGBA=Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The value of every pixel is represented as a 32 bit integer.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="kmeans.fun.RandomSampling" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RandomSampling"></a>
+      <a id="RandomSampling:RandomSampling"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RandomSampling$.html"><span class="name">RandomSampling</span></a><span class="result"> extends <a href="InitialSelectionStrategy.html" class="extype" name="kmeans.fun.InitialSelectionStrategy">InitialSelectionStrategy</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@RandomSampling" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kmeans.fun.ScalaShop" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScalaShop"></a>
+      <a id="ScalaShop:ScalaShop"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ScalaShop$.html"><span class="name">ScalaShop</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@ScalaShop" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kmeans.fun.UniformChoice" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UniformChoice"></a>
+      <a id="UniformChoice:UniformChoice"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="UniformChoice$.html"><span class="name">UniformChoice</span></a><span class="result"> extends <a href="InitialSelectionStrategy.html" class="extype" name="kmeans.fun.InitialSelectionStrategy">InitialSelectionStrategy</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@UniformChoice" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kmeans.fun.UniformSampling" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UniformSampling"></a>
+      <a id="UniformSampling:UniformSampling"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="UniformSampling$.html"><span class="name">UniformSampling</span></a><span class="result"> extends <a href="InitialSelectionStrategy.html" class="extype" name="kmeans.fun.InitialSelectionStrategy">InitialSelectionStrategy</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@UniformSampling" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kmeans.fun#alpha" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="alpha(c:kmeans.fun.package.RGBA):Double"></a>
+      <a id="alpha(RGBA):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">alpha</span><span class="params">(<span name="c">c: <a href="#RGBA=Int" class="extmbr" name="kmeans.fun.RGBA">RGBA</a></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@alpha(c:kmeans.fun.package.RGBA):Double" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the alpha component.</p>
+    </li><li name="kmeans.fun#blue" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="blue(c:kmeans.fun.package.RGBA):Double"></a>
+      <a id="blue(RGBA):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">blue</span><span class="params">(<span name="c">c: <a href="#RGBA=Int" class="extmbr" name="kmeans.fun.RGBA">RGBA</a></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@blue(c:kmeans.fun.package.RGBA):Double" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the blue component.</p>
+    </li><li name="kmeans.fun#clamp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clamp(v:Int,min:Int,max:Int):Int"></a>
+      <a id="clamp(Int,Int,Int):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clamp</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Int">Int</span></span>, <span name="min">min: <span class="extype" name="scala.Int">Int</span></span>, <span name="max">max: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@clamp(v:Int,min:Int,max:Int):Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Restricts the integer into the specified range.</p>
+    </li><li name="kmeans.fun#green" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="green(c:kmeans.fun.package.RGBA):Double"></a>
+      <a id="green(RGBA):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">green</span><span class="params">(<span name="c">c: <a href="#RGBA=Int" class="extmbr" name="kmeans.fun.RGBA">RGBA</a></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@green(c:kmeans.fun.package.RGBA):Double" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the green component.</p>
+    </li><li name="kmeans.fun#red" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="red(c:kmeans.fun.package.RGBA):Double"></a>
+      <a id="red(RGBA):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">red</span><span class="params">(<span name="c">c: <a href="#RGBA=Int" class="extmbr" name="kmeans.fun.RGBA">RGBA</a></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@red(c:kmeans.fun.package.RGBA):Double" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the red component.</p>
+    </li><li name="kmeans.fun#rgba" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="rgba(r:Double,g:Double,b:Double,a:Double):kmeans.fun.package.RGBA"></a>
+      <a id="rgba(Double,Double,Double,Double):RGBA"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rgba</span><span class="params">(<span name="r">r: <span class="extype" name="scala.Double">Double</span></span>, <span name="g">g: <span class="extype" name="scala.Double">Double</span></span>, <span name="b">b: <span class="extype" name="scala.Double">Double</span></span>, <span name="a">a: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="#RGBA=Int" class="extmbr" name="kmeans.fun.RGBA">RGBA</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kmeans.fun.package@rgba(r:Double,g:Double,b:Double,a:Double):kmeans.fun.package.RGBA" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Used to create an RGBA value from separate components.</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
