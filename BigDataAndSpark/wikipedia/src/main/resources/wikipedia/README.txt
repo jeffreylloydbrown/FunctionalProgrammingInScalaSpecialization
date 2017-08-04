@@ -1,0 +1,1 @@
+Github won't let me check in wikipedia.dat because it is over 100MB.  Therefore, you must unzip wikipedia.zip before working with the code.
